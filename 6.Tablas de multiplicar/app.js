@@ -1,19 +1,25 @@
+let nodoContenedorTablas = document.querySelector('.contenedor-tablas');
 
-
-
-
-let nodoTabla = document.querySelector('.contenedor-tabla');
 
 function generarTabla(numero) {
     let titulo = '<h2>' + 'Tabla del ' + numero + '</h2>';
-
     let lista = '<ul>';
     for (let i = 1; i <= 10; i++) {
         lista += '<li>' + numero + ' x ' + i + ' = ' + (numero * i) + '</li>';
-
     }
     lista += '</ul>';
-    nodoTabla.innerHTML = titulo + lista;
+    return titulo + lista;
 }
 
-generarTabla(1);
+
+function crearTablas(numeroTablas) {
+    let contenido = '';
+    for (let i = 1; i <= numeroTablas; i++) {
+        contenido += generarTabla(i);
+    }
+    nodoContenedorTablas.innerHTML = contenido;
+}
+
+
+
+crearTablas(10);

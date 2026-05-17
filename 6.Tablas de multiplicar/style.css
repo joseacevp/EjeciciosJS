@@ -1,29 +1,32 @@
-body{
+.contenedor-tablas {
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
 }
 
-.contenedor-tabla {
+#contenedor-tabla {
     display: flex;
     flex-direction: column;
     width: 200px;
-    height: 350px;
+    height: auto;
     border: solid 1px black;
 }
-.contenedor-tabla h2 {
+#contenedor-tabla h2 {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     margin: 0;
     padding: 5px;
 }
-.contenedor-tabla ul {
+#contenedor-tabla ul {
     list-style: none;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-.contenedor-tabla ul li {
+#contenedor-tabla ul li {
     padding: 5px;
   
 }
