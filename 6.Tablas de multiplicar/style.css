@@ -1,0 +1,29 @@
+body{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.contenedor-tabla {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 350px;
+    border: solid 1px black;
+}
+.contenedor-tabla h2 {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 5px;
+}
+.contenedor-tabla ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.contenedor-tabla ul li {
+    padding: 5px;
+  
+}
