@@ -1,20 +1,23 @@
 let nodoContenedorTablas = document.querySelector('.contenedor-tablas');
-
+let nodoContendorTabla = document.querySelector('#contenedor-tabla');
 
 function generarTabla(numero) {
-    let titulo = '<h2>' + 'Tabla del ' + numero + '</h2>';
-    let lista = '<ul>';
+    let tabla = " ";
     for (let i = 1; i <= 10; i++) {
-        lista += '<li>' + numero + ' x ' + i + ' = ' + (numero * i) + '</li>';
+        tabla += numero + ' x ' + i + ' = ' + (numero * i) + '<br>';
     }
-    lista += '</ul>';
-    return titulo + lista;
+    str_html = `<div id="contenedor-tabla">
+        <h1>Tablas de Multiplicar del ${numero}</h1>
+         <p>${tabla}</p>
+
+      </div>`;
+    return str_html;
 }
 
 
 function crearTablas(numeroTablas) {
     let contenido = '';
-    for (let i = 1; i <= numeroTablas; i++) {
+    for (let i = 0; i <= numeroTablas; i++) {
         contenido += generarTabla(i);
     }
     nodoContenedorTablas.innerHTML = contenido;
@@ -22,4 +25,6 @@ function crearTablas(numeroTablas) {
 
 
 
-crearTablas(10);
+crearTablas(20);
+
+
