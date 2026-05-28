@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.contenedor-botones{
+    display: flex;
+    flex-direction: row;    
+    justify-content: space-around;
+    margin: 20px;
+    gap: 10px;
+}
+.contenedor-botones button{
+    
+}
+#imagenes{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    justify-content: space-around;
+    gap: 10px;
+}
+#imagenes img{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+.oculto{
+    display: none;
+}
